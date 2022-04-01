@@ -1,0 +1,43 @@
+<div class="converter">
+  <h1>Converter</h1>
+  <div>
+    <input
+      #input1
+      class="form-control"
+      type="text"
+      name="first"
+      [value]="inputs.first"
+      (keyup)="inputChange($event, select1, select2)"
+    />
+    <select
+      #select1
+      class="form-select"
+      name="first"
+      (change)="selectChange($event, input1, input2)"
+    >
+      <option *ngFor="let curr of allCurrencies" [value]="curr">
+        {{ curr }}
+      </option>
+    </select>
+  </div>
+  <div>
+    <input
+      #input2
+      class="form-control"
+      type="text"
+      name="second"
+      [value]="inputs.second"
+      (keyup)="inputChange($event, select1, select2)"
+    />
+    <select
+      #select2
+      class="form-select"
+      name="second"
+      (change)="selectChange($event, input1, input2)"
+    >
+      <option *ngFor="let curr of allCurrencies" [value]="curr">
+        {{ curr }}
+      </option>
+    </select>
+  </div>
+</div>

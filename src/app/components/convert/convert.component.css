@@ -1,0 +1,24 @@
+.converter {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.converter div {
+    width: 100%;
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.converter div input {
+    max-width: 150px;
+    margin-right: 10px;
+}
+
+.converter div select {
+    max-width: 90px;
+    margin-right: 10px;
+}
